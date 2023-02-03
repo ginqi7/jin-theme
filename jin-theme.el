@@ -35,10 +35,7 @@
      :background "#fdf6e3"
      :foreground "black")))
  `(hl-line
-   ((t
-     (:box
-      (:line-width (-1 . -2) :color "#edccb7" :style nil)
-      :foreground "black"))))
+   ((t (:box (:line-width (-1 . -2) :color "#edccb7" :style nil)))))
  `(cursor ((t (:background "#6c71c4"))))
  '(region ((t (:background "#edccb7"))))
  '(fringe ((t )))
@@ -83,7 +80,9 @@
     (t (:bold t :inherit default :background "#ffffff"))))
  '(window-divider ((t (:foreground "grey60"))))
  '(vertical-border ((t (:foreground "grey20"))))
- '(org-block ((t (:background "#efffef" :extend t))))
+ '(org-block ((t (                      ;:background "#efffef"
+                  ;;      :box (:line-width (-1 . -2) :color "#edccb7" :style nil)
+                  :extend t))))
  '(org-table ((t (:foreground "grey40"))))
  '(org-level-1 ((t (:bold t ))))
  '(org-level-2 ((t (:bold t ))))
