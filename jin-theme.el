@@ -45,12 +45,13 @@
  `(font-lock-doc-face ((t (:inherit ,font-lock-comment-face))))
  `(font-lock-warning-face ((t (:foreground "red"))))
  `(font-lock-string-face ((t (:background "#FFEE99"))))
- `(font-lock-function-name-face ((t (:background "#e9defa"))))
+ `(font-lock-function-name-face ((t (:foreground "Blue"))))
  `(font-lock-keyword-face ((t (:foreground "#6c71c4"))))
  `(font-lock-constant-face ((t (:foreground "#381a8a"))))
  `(font-lock-builtin-face ((t ())))
  `(font-lock-variable-name-face ((t ())))
  `(font-lock-type-face ((t (:foreground "#b58900"))))
+ `(header-line ((t (:foreground "#b58900"))))
  `(font-lock-preprocessor-face
    ((t (:inherit font-lock-constant-face))))
  '(meow-keypad-indicator
