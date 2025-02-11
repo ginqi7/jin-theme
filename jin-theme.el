@@ -38,10 +38,11 @@
    ((t (:box (:line-width (-1 . -2) :color "#edccb7" :style nil)))))
  `(cursor ((t (:background "#6c71c4"))))
  '(region ((t (:background "#edccb7"))))
- '(fringe ((t )))
+ '(fringe ((t)))
+ ;; font lock
  `(font-lock-comment-face
    ((t
-     (:foreground ,"#c4a599" :weight normal :italic t :variable-pitch t ))))
+     (:foreground ,"#c4a599" :weight normal :italic t :variable-pitch t))))
  `(font-lock-doc-face ((t (:inherit ,font-lock-comment-face))))
  `(font-lock-warning-face ((t (:foreground "red"))))
  `(font-lock-string-face ((t (:background "#FFEE99"))))
@@ -54,6 +55,7 @@
  `(header-line ((t (:foreground "#b58900"))))
  `(font-lock-preprocessor-face
    ((t (:inherit font-lock-constant-face))))
+ ;; meow
  '(meow-keypad-indicator
    ((t (:foreground "#801717" :background "#FF6666"))))
  '(meow-insert-indicator
@@ -66,9 +68,11 @@
  '(meow-insert-cursor ((t (:background "#014f39"))))
  '(meow-normal-cursor ((t (:background "#dc322f"))))
  '(meow-motion-cursor ((t (:background "#035063"))))
+ ;; dired
  '(dired-directory ((t (:inherit font-lock-keyword-face))))
  `(parenthesis ((t (:foreground "#909090"))))
  '(highlight-symbol-face ((t ())))
+ ;; Rime
  '(rime-preedit-face ((t (:inverse-video nil :underline t))))
  '(rime-cursor-face ((t (:inherit font-lock-constant-face))))
  '(cider-fringe-good-face ((t (:foreground "#006666"))))
@@ -81,17 +85,20 @@
     (t (:bold t :inherit default :background "#ffffff"))))
  '(window-divider ((t (:foreground "grey60"))))
  '(vertical-border ((t (:foreground "grey20"))))
+ ;; org mode
  '(org-block ((t (                      ;:background "#efffef"
                   ;;      :box (:line-width (-1 . -2) :color "#edccb7" :style nil)
                   :extend t))))
  '(org-table ((t (:foreground "grey40"))))
- '(org-level-1 ((t (:bold t ))))
- '(org-level-2 ((t (:bold t ))))
- '(org-level-3 ((t (:bold t ))))
- '(org-level-4 ((t (:bold t ))))
- '(org-level-5 ((t (:bold t ))))
- '(org-level-6 ((t (:bold t ))))
- '(org-level-7 ((t (:bold t )))))
+ '(org-level-1 ((t (:bold t))))
+ '(org-level-2 ((t (:bold t))))
+ '(org-level-3 ((t (:bold t))))
+ '(org-level-4 ((t (:bold t))))
+ '(org-level-5 ((t (:bold t))))
+ '(org-level-6 ((t (:bold t))))
+ '(org-level-7 ((t (:bold t))))
+ ;; diff
+ '(diff-changed ((t (:background "#fed48b")))))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
