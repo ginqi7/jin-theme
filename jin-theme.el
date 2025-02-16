@@ -68,6 +68,7 @@
  '(meow-insert-cursor ((t (:background "#014f39"))))
  '(meow-normal-cursor ((t (:background "#dc322f"))))
  '(meow-motion-cursor ((t (:background "#035063"))))
+ '(secondary-selection ((t (:background "#fed48b"))))
  ;; dired
  '(dired-directory ((t (:inherit font-lock-keyword-face))))
  `(parenthesis ((t (:foreground "#909090"))))
