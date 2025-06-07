@@ -52,6 +52,8 @@
      ((t (:box (:line-width (-1 . -2) :color ,region-bg :style nil)))))
    `(region ((t (:background ,region-bg))))
    '(fringe ((t)))
+   ;; UI
+   `(header-line ((t)))
    ;; font lock
    `(font-lock-comment-face
      ((t
@@ -74,6 +76,7 @@
    '(dired-directory ((t (:inherit font-lock-keyword-face))))
    '(highlight-symbol-face ((t ())))
    ;; Rime
+   '(rime-default-face ((t (:inherit default))))
    '(rime-preedit-face ((t (:inverse-video nil :underline t))))
    '(rime-cursor-face ((t (:inherit font-lock-constant-face))))
    `(line-number-current-line
