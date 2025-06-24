@@ -53,7 +53,7 @@
    `(region ((t (:background ,region-bg))))
    '(fringe ((t)))
    ;; UI
-   `(header-line ((t)))
+   `(header-line ((t (:background ,main-bg))))
    ;; font lock
    `(font-lock-comment-face
      ((t
