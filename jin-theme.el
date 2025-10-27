@@ -26,16 +26,19 @@
 
 (deftheme jin "A personal light theme.")
 
+;; Red Orange Yellow Green Cyan Blue Purple Gray
+
+;; Background:        Yellow  #fdf6e3
+;; Foreground:        Black   #000000
+;; Constant:          Green   #0f766e
+;; Documentation:     Blue    #381a8a
+;; Definition:        Purple  #9333ea
+;; Type:              Orange  #E06D00
+;; Comment:           Gray    #c4a599
+
 (let ((main-bg "#fdf6e3")
-      (main-fg "black")
+      (main-fg "#000000")
       (region-bg "#edccb7")
-      (keyword-fg "#5b21b6")
-      (string-bg "#faece1")
-      (constant-fg "#381a8a")
-      (function-fg "#9333ea")
-      (variable-fg "#0f766e")
-      (type-fg "#16a34a")
-      (comment-fg "#c4a599")
       (error-fg "#db2777")
       (warning-fg "#eab308")
       (secondary-selection-bg "#c7d2fe")
@@ -44,31 +47,26 @@
 
   (custom-theme-set-faces
    'jin
-   `(default
-     ((((type graphic))
-       :background ,main-bg
-       :foreground ,main-fg)))
-   `(hl-line
-     ((t (:box (:line-width (-1 . -2) :color ,region-bg :style nil)))))
+   `(default ((((type graphic)) :background ,main-bg :foreground ,main-fg)))
+   `(hl-line ((t (:box (:line-width (-1 . -2) :color ,region-bg :style nil)))))
    `(region ((t (:background ,region-bg))))
    '(fringe ((t)))
-   ;; UI
-   `(header-line ((t (:background ,main-bg))))
+   
    ;; font lock
-   `(font-lock-comment-face
-     ((t
-       (:foreground ,comment-fg :weight normal :italic t :variable-pitch t))))
-   `(font-lock-doc-face ((t (:inherit ,font-lock-comment-face))))
-   `(font-lock-warning-face ((t (:foreground ,warning-fg))))
-   `(font-lock-string-face ((t (:background ,string-bg))))
-   `(font-lock-function-name-face ((t (:foreground ,function-fg))))
-   `(font-lock-keyword-face ((t (:foreground ,keyword-fg))))
-   `(font-lock-constant-face ((t (:foreground ,constant-fg))))
+   `(font-lock-function-call-face ((t)))
    `(font-lock-builtin-face ((t ())))
-   `(font-lock-variable-name-face ((t (:foreground ,variable-fg))))
-   `(font-lock-type-face ((t (:foreground ,type-fg))))
-   `(font-lock-preprocessor-face
-     ((t (:inherit font-lock-constant-face))))
+   `(font-lock-doc-face ((t (:foreground "#381a8a"))))
+   `(font-lock-warning-face ((t (:foreground ,warning-fg))))
+   `(font-lock-keyword-face ((t (:foreground "#c4a599"))))
+   `(font-lock-comment-face ((t (:foreground "#c4a599"))))
+   `(font-lock-constant-face ((t (:foreground "#0f766e"))))
+   `(font-lock-string-face ((t (:foreground "#0f766e"))))
+   `(font-lock-number-face ((t (:foreground "#0f766e"))))
+   `(font-lock-variable-name-face ((t (:foreground "#9333ea"))))
+   `(font-lock-function-name-face ((t (:foreground "#9333ea"))))
+   `(font-lock-type-face ((t (:foreground "#E06D00"))))
+   `(font-lock-preprocessor-face ((t (:inherit font-lock-constant-face))))
+   
    ;; meow
    `(meow-normal-cursor ((t (:background ,cursor-bg))))
    `(secondary-selection ((t (:background ,secondary-selection-bg))))
